@@ -13,11 +13,17 @@ body {
     --cor-azul-escuro: #1E1C21;
     --cor-button: #0B216F:
 }
-.menu-nav{
-    background:rgba(var(--cor-azul-escuro-rgb), 0.87)!important}
+
+.menu-nav {
+    background: rgba(var(--cor-azul-escuro-rgb), 0.87) !important
+}
 
 #menu {
     height: 30 px;
+}
+
+.navbar-toggler-icon{
+    display: none;
 }
 
 h1 {
@@ -125,22 +131,54 @@ h1 {
 .box-inpult {
     order: 3;
 }
-.banner_descricao{
-  
-    bottom:45% !important;
-    left:50% !important;
-   
+
+.banner_descricao {
+
+    bottom: 45% !important;
+    left: 50% !important;
+
 }
-.text-produtos{
+
+.text-produtos {
     padding-left: 7rem;
 }
+
 
 
 @media only screen and (max-width:991px) {
     .imagem {
         display: none;
     }
-    
+    .navbar-toggler-icon{
+        display: flex;
+    }
+    .menu-responsivo {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        background: rgba(var(--cor-azul-escuro-rgb), 0.87) !important;
+
+    }
+
+    .nav-link {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-left: 3px dotted #AAB0AE;
+        font-size: 1rem;
+    }
+
+    .nav-ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 5rem;
+    }
+.logo-responsivo{
+    z-index: 100;
+}
 
     .descricao {
         width: 100% !important;
@@ -201,11 +239,12 @@ h1 {
         display: flex;
         flex-direction: column;
     }
-   .banner_descricao {
+
+    .banner_descricao {
         width: 100%;
         bottom: 43% !important;
         left: 0% !important;
-   }
+    }
 }
 
 @media only screen and (max-width:576px) {
@@ -221,16 +260,18 @@ h1 {
         margin-bottom: 1rem;
         border-radius: 0;
     }
-    .banner_patrocinadores{
-        display:none;
+
+    .banner_patrocinadores {
+        display: none;
     }
-    
-    h1{
-        font-size: 2rem!important;
+
+    h1 {
+        font-size: 2rem !important;
     }
+
     .text-produtos {
         padding-left: 3rem;
     }
-   
-   
+
+
 }
