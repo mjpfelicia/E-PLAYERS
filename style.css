@@ -13,22 +13,16 @@ body {
     --cor-azul-escuro: #1E1C21;
     --cor-button: #0B216F:
 }
-
-.menu-nav {
-    background: rgba(var(--cor-azul-escuro-rgb), 0.87) !important
+h1 {
+    font-size: 4rem
 }
 
-#menu {
-    height: 30 px;
-}
+
 
 .navbar-toggler-icon{
     display: none;
 }
 
-h1 {
-    font-size: 4rem
-}
 
 .whapper-banner_pilotos {
     background-image: url(./imagem/banner_pilotos.png);
