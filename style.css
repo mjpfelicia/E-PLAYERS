@@ -13,7 +13,8 @@ body {
     --cor-azul-escuro: #1E1C21;
     --cor-button: #0B216F:
 }
-
+.menu-nav{
+    background:rgba(var(--cor-azul-escuro-rgb), 0.87)!important}
 
 #menu {
     height: 30 px;
@@ -23,7 +24,7 @@ h1 {
     font-size: 4rem
 }
 
-.bg-card-mg {
+.whapper-banner_pilotos {
     background-image: url(./imagem/banner_pilotos.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -32,12 +33,28 @@ h1 {
 
 }
 
+.whapper-banner_cs {
+    background-image: url(./imagem/banner_cs.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+    border: none;
+}
+
+.whapper-banner_lol {
+    background-image: url(./imagem/banner_lol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 610px;
+    border: none;
+}
+
 .btn-liga {
     background-color: var(--cor-vermelho);
     border: none;
 }
 
-.bg-azul-escuro {
+.banner_patrocinadores {
     background: rgba(var(--cor-azul-escuro-rgb), 0.87);
 }
 
@@ -45,14 +62,10 @@ h1 {
     padding: 0px;
 }
 
-.bg-section-vendas {
+.banner_vendas {
     background: rgb(var(--cor-azul-escuro-rgb));
 }
 
-
-.color {
-    color: var(--cor-branco-) !important;
-}
 
 .card-box {
     background: linear-gradient(180deg, #000000 0%, rgba(196, 196, 196, 0) 100%);
@@ -97,27 +110,37 @@ h1 {
     color: var(--cor-branco-);
 }
 
-.link{
-    order:0;
+.link {
+    order: 0;
 }
 
-.paginas{
-    order:1;
+.paginas {
+    order: 1;
 }
 
-.logo-footer{
-    order:2;
+.logo-footer {
+    order: 2;
 }
 
-.box-inpult{
+.box-inpult {
     order: 3;
 }
+.banner_descricao{
+  
+    bottom:45% !important;
+    left:50% !important;
+   
+}
+.text-produtos{
+    padding-left: 7rem;
+}
 
 
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:991px) {
     .imagem {
         display: none;
     }
+    
 
     .descricao {
         width: 100% !important;
@@ -133,26 +156,26 @@ h1 {
 
     .link {
         order: 1;
-        
+
     }
 
     .paginas {
         order: 2;
     }
 
-    .logo-footer{
+    .logo-footer {
         order: 0;
         width: 100%;
         text-align: center;
-     
+
 
     }
 
     .box-inpult {
         order: 3;
         display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .titulo {
@@ -169,24 +192,45 @@ h1 {
     .descricao-footer {
         width: 100% !important;
     }
-    .box-links{
+
+    .box-links {
         flex-direction: column;
     }
-    .conteudo-icons{
+
+    .conteudo-icons {
         display: flex;
         flex-direction: column;
     }
+   .banner_descricao {
+        width: 100%;
+        bottom: 43% !important;
+        left: 0% !important;
+   }
 }
+
 @media only screen and (max-width:576px) {
     .caixa-email {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
-        border-radius:0;
+        border-radius: 0;
     }
-    .caixa-inpult{
-        width: 100%!important;
+
+    .caixa-inpult {
+        width: 100% !important;
         margin-bottom: 1rem;
-        border-radius:0;    }
-  }
-  
+        border-radius: 0;
+    }
+    .banner_patrocinadores{
+        display:none;
+    }
+    
+    h1{
+        font-size: 2rem!important;
+    }
+    .text-produtos {
+        padding-left: 3rem;
+    }
+   
+   
+}
