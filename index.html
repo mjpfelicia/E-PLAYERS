@@ -14,37 +14,23 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-dark fixed-top bg-dark p-3 menu-nav">
-            <div class="container">
-                <div id="menu" class="logo logo-responsivo">
-                    <img class="imagem-logo" src="./imagem/logo.svg" alt="logo">
-                </div>
-                <button class="navbar-toggler menu-bar" type="button" data-bs-toggle="collapse" data-bs-target="#"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                                       
-                </button>
-                <div class="menu-responsivo nav-menu justify-content-end">
-                    <ul class="navbar-nav nav-ul">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">INÍCIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">HORÁRIOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">COMPEONATOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">RESULTADOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">NOTÍCIAS</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
+        <div class="container-grid content-menu">
+          
+            <img class="logo" src="imagem/logo.svg" title="logo-menu" alt="logo">
+
+            <nav class="menu">
+                <a class="text-white text-decoration-none " href="#">Início</a>
+                <a class="text-white text-decoration-none " href="#">Horários</a>
+                <a class="text-white text-decoration-none " href="#">Campeonato</a>
+                <a class="text-white text-decoration-none " href="#">Resultados</a>
+                <a class="text-white text-decoration-none " href="#">Notícias</a>
+            </nav>
+
+            <img class="menu-bars" id="menu-bars"  src="./imagem/bars.svg" alt="">
+        </div>
+
+        
     </header>
 
     <main>
@@ -334,6 +320,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
         </script>
-<script src="./main.js"></script></body>
+        <script src="./main.js"></script>
+</body>
 
 </html>

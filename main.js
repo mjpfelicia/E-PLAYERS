@@ -1,12 +1,10 @@
 
-    const click = document.querySelector(".navbar-toggler");
 
-    click.addEventListener("click", function () {
-        const mostra = document.querySelector(".menu-responsivo");
-        if (mostra.style.display === "none")
-            mostra.style.display = "flex";
-        else {
-            mostra.style.display = "none";
-        }
-    })
+
+const click = document.querySelector("#menu-bars");
+
+click.addEventListener("click", function () {
+    let navbar = document.querySelector(".menu");
+    navbar.classList.toggle("mostraEscondeMenu");
+})
 
