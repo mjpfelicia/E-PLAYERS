@@ -16,7 +16,7 @@
     <header>
 
         <div class="container-grid content-menu">
-          
+
             <img class="logo" src="imagem/logo.svg" title="logo-menu" alt="logo">
 
             <nav class="menu">
@@ -27,10 +27,10 @@
                 <a class="text-white text-decoration-none " href="#">Notícias</a>
             </nav>
 
-            <img class="menu-bars" id="menu-bars"  src="./imagem/bars.svg" alt="">
+            <img class="menu-bars" id="menu-bars" src="./imagem/bars.svg" alt="">
         </div>
 
-        
+
     </header>
 
     <main>
@@ -223,9 +223,7 @@
                 <div class="py-4">
                     <div class="row">
                         <div class="col-sm-6 col-md-3 logo-footer pt-5">
-                            <div class="widget subscribe no-box">
-                                <img src="./imagem/logo.svg" alt="#">
-                            </div>
+                            <img src="./imagem/logo.svg" alt="logo">
                         </div>
                         <div class="col-xs-12 col-sm-6 d-flex justify-content-evenly box-links">
                             <div class="link pt-4">
@@ -292,11 +290,15 @@
                         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 pt-4 box-inpult">
                             <h5 class="titulo text-white">faça parte do nosso clan,assine nossa newsletter!</h5>
                             <div class="input-group caixa-email pt-3">
-                                <input type="text" class="form-control caixa-inpult" placeholder="E-MAIL"
-                                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-secondary button-enviar" type="button"
-                                    id="button-addon2">cadastra</button>
+                                <form id="form" name="cadastrese" method="post" action="">
+                                    <input type="text" name="email" id="email" class="form-control caixa-inpult"
+                                        placeholder="E-MAIL" aria-label="Recipient's username"
+                                        aria-describedby="button-addon2">
+                                    <input class="btn btn-outline-secondary button-enviar" type="submit"
+                                        value="cadastra" id="verificar-email" />
+                                </form>
                             </div>
+                            <strong class="msg-error"></strong>
                             <div class="d-flex justify-content-center align-items-center conteudo-icons pt-4">
                                 <div class="box-icons">
                                     <h5 class="m-0 text-white">Siga-nos em:</h5>
@@ -320,7 +322,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
         </script>
-        <script src="./main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>

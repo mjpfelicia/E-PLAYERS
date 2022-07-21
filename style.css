@@ -19,6 +19,7 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 h1 {
     font-size: 4rem
 }
@@ -137,6 +138,8 @@ header .menu-bars {
 .button-enviar {
     background: #0B216F;
     color: var(--cor-branco-);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .link {
@@ -154,9 +157,12 @@ header .menu-bars {
 .box-inpult {
     order: 3;
 }
+.form-control{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
 .banner_descricao {
-
     bottom: 45% !important;
     left: 50% !important;
 
@@ -165,13 +171,20 @@ header .menu-bars {
 .text-produtos {
     padding-left: 7rem;
 }
+#form{
+    display: flex;
+}
+.msg-error{
+    color: var(--cor-vermelho);
+    font-size: .9rem;
+}
 
 
 @media only screen and (max-width:991px) {
     .imagem {
         display: none;
     }
- 
+
 
     header .menu {
         position: fixed;
@@ -185,14 +198,14 @@ header .menu-bars {
         width: 70%;
         height: 100%;
         padding: 20px 50px;
-        background-color:rgba(var(--cor-azul-escuro-rgb), 0.87);
+        background-color: rgba(var(--cor-azul-escuro-rgb), 0.87);
         border-radius: 0 0 0 90px;
         transition: left 0.4s, opacity 0.5s;
     }
 
     header .menu a {
         margin-bottom: 1rem;
-        padding:1rem;
+        padding: 1rem;
         border-left: 3px dotted #AAB0AE;
         font-size: 1.4rem;
     }
@@ -273,6 +286,7 @@ header .menu-bars {
         bottom: 43% !important;
         left: 0% !important;
     }
+    
 }
 
 @media only screen and (max-width:576px) {
@@ -300,11 +314,22 @@ header .menu-bars {
     .text-produtos {
         padding-left: 3rem;
     }
-    .logo{
+
+    .logo {
         width: 13rem;
     }
+
     header .menu-bars {
-        width:1.5rem;
+        width: 1.5rem;
+    }
+
+    .button-enviar {
+        width: 100%;
+        border-radius: 0;
+    }
+    #form{
+        display: flex;
+        flex-direction: column;
     }
 
 
