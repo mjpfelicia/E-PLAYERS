@@ -18,8 +18,6 @@ $(document).ready(function () {
 });
 
 
-
-// validando o email jQuery
 $(document).ready(function () {
     $("strong").hide();
     $('#verificar-email').click(function () {
