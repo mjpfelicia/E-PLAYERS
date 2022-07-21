@@ -2,7 +2,7 @@
 
 ![Design preview](./design/desctop.png)
 ![Design preview](./design/tabletpng.png)
-![Design preview](./design/mobile%.png)
+![Design preview](./design/mobile.png)
 
 
 
